@@ -55,6 +55,7 @@ export interface ToasterProps<T = void> extends LayoutAnimationProps {
   onSwipeEdge?: (helpers: OnSwipeEdge<T>) => void;
   displayFromBottom?: boolean;
   useSafeArea?: boolean;
+  marginTop?: number;
 }
 
 export type BaseProps = {

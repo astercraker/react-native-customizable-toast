@@ -98,10 +98,12 @@ const CustomToastComponent = () => {
 interface CustomToasterProps {
   displayFromBottom?: boolean;
   useSafeArea?: boolean;
+  marginTop?: number;
 }
 export const CustomToaster = ({
   useSafeArea,
   displayFromBottom,
+  marginTop,
 }: CustomToasterProps) => {
   return (
     <ToasterBase
@@ -113,6 +115,7 @@ export const CustomToaster = ({
       itemStyle={customStyleWorklet}
       displayFromBottom={displayFromBottom}
       useSafeArea={useSafeArea}
+      marginTop={marginTop}
     />
   );
 };

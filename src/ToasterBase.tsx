@@ -31,6 +31,7 @@ const ToasterBaseWithoutRef = <T extends object>(
     itemStyle = defaultStyleWorklet,
     displayFromBottom = false,
     useSafeArea,
+    marginTop,
     ...rest
   }: ToasterProps<T>,
   ref: Ref<ToasterMethods<T>>
@@ -91,6 +92,7 @@ const ToasterBaseWithoutRef = <T extends object>(
           transform: [
             displayFromBottom ? { rotate: '180deg' } : { rotate: '0deg' },
           ],
+          marginTop: marginTop || 0,
         },
       ]}
       pointerEvents="box-none"
